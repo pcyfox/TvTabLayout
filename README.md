@@ -87,6 +87,24 @@ for(int i=0; i<15; i++) {
             android:text="标题3"/>
 
     </com.owen.tab.TvTabLayout>
+
+// 监听设置
+mTabLayout.addOnTabSelectedListener(new TvTabLayout.OnTabSelectedListener() {
+    @Override
+    public void onTabSelected(TvTabLayout.Tab tab) {
+
+    }
+
+    @Override
+    public void onTabUnselected(TvTabLayout.Tab tab) {
+
+    }
+
+    @Override
+    public void onTabReselected(TvTabLayout.Tab tab) {
+
+    }
+});
 ```
 
 ### 更详细的使用请见exmaple

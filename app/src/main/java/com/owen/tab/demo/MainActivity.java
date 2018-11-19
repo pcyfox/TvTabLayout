@@ -24,5 +24,22 @@ public class MainActivity extends AppCompatActivity {
             mTabLayout2.addTab(mTabLayout2.newTab().setText("标题"+i));
             mTabLayout4.addTab(mTabLayout4.newTab().setText("标题"+i));
         }
+        
+        mTabLayout.addOnTabSelectedListener(new TvTabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TvTabLayout.Tab tab) {
+        
+            }
+    
+            @Override
+            public void onTabUnselected(TvTabLayout.Tab tab) {
+        
+            }
+    
+            @Override
+            public void onTabReselected(TvTabLayout.Tab tab) {
+        
+            }
+        });
     }
 }
