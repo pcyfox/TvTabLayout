@@ -99,6 +99,6 @@ for(int i=0; i<15; i++) {
 
 TvRecyclerView框架[TvRecyclerView](https://github.com/zhousuqiang/TvRecyclerView)
 
-Tv控件[TvWidget](https://github.com/zhousuqiang/TvWidgetDemo)
+Tv控件[TvWidget](https://github.com/zhousuqiang/TvWidget)
 
 作者 [owen](https://github.com/zhousuqiang)
