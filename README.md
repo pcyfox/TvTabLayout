@@ -1,7 +1,5 @@
 # 欢迎使用 TvTabLayout [ ![Download](https://api.bintray.com/packages/zhousuqiang/maven/tv-tablayout/images/download.svg) ](https://bintray.com/zhousuqiang/maven/tv-tablayout/_latestVersion)
 
-群   号：484790001 [群二维码](https://github.com/zhousuqiang/TvRecyclerView/blob/master/images/qq.png)
-
 >* 针对TV端的特性对TabLayout进行了适配与开发;
 >* 支持图片或颜色值作为Indicator;
 
@@ -110,6 +108,10 @@ mTabLayout.addOnTabSelectedListener(new TvTabLayout.OnTabSelectedListener() {
 ### 更详细的使用请见exmaple
 
 ------
+
+扣 扣 群：484790001（注：加群时请写明来源及目的）
+
+![](https://github.com/zhousuqiang/TvRecyclerView/blob/master/images/qq.png)
 
 ### 其它作品
 
