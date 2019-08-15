@@ -291,55 +291,55 @@ public class TvTabLayout extends HorizontalScrollView {
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TvTabLayout, defStyleAttr, 0);
 
-        Drawable mStateListDrawable = a.getDrawable(R.styleable.TvTabLayout_tabIndicatorResId);
+        Drawable mStateListDrawable = a.getDrawable(R.styleable.TvTabLayout_tvTabIndicatorResId);
         if(null != mStateListDrawable) {
             mStateListDrawable.setCallback(this); //设置回调，当改变状态时，会回掉该View进行invalidate()刷新操作.
             mTabStrip.setIndicatorDrawable(mStateListDrawable);
         }
 
-        mIndicatorGravity = a.getInt(R.styleable.TvTabLayout_tabIndicatorGravity, GRAVITY_BOTTOM);
-        mTabStrip.setCircleDotRadius(a.getDimensionPixelOffset(R.styleable.TvTabLayout_tabCircleDotRadius, 0));
-        mTabStrip.setCircleDotColor(a.getColor(R.styleable.TvTabLayout_tabCircleDotColor, 0));
-        mTabStrip.setIndicatorWidth(a.getDimensionPixelOffset(R.styleable.TvTabLayout_tabIndicatorWidth, 0));
+        mIndicatorGravity = a.getInt(R.styleable.TvTabLayout_tvTabIndicatorGravity, GRAVITY_BOTTOM);
+        mTabStrip.setCircleDotRadius(a.getDimensionPixelOffset(R.styleable.TvTabLayout_tvTabCircleDotRadius, 0));
+        mTabStrip.setCircleDotColor(a.getColor(R.styleable.TvTabLayout_tvTabCircleDotColor, 0));
+        mTabStrip.setIndicatorWidth(a.getDimensionPixelOffset(R.styleable.TvTabLayout_tvTabIndicatorWidth, 0));
         mTabStrip.setIndicatorHeight(
-                a.getDimensionPixelOffset(R.styleable.TvTabLayout_tabIndicatorHeight, 0));
-        mTabStrip.setIndicatorBackgroundColor(a.getColor(R.styleable.TvTabLayout_tabIndicatorBackgroundColor, 0));
-        mTabStrip.setIndicatorBackgroundHeight(a.getDimensionPixelOffset(R.styleable.TvTabLayout_tabIndicatorBackgroundHeight, 0));
+                a.getDimensionPixelOffset(R.styleable.TvTabLayout_tvTabIndicatorHeight, 0));
+        mTabStrip.setIndicatorBackgroundColor(a.getColor(R.styleable.TvTabLayout_tvTabIndicatorBackgroundColor, 0));
+        mTabStrip.setIndicatorBackgroundHeight(a.getDimensionPixelOffset(R.styleable.TvTabLayout_tvTabIndicatorBackgroundHeight, 0));
 
         mTabPaddingStart = mTabPaddingTop = mTabPaddingEnd = mTabPaddingBottom = a
-                .getDimensionPixelOffset(R.styleable.TvTabLayout_tabPadding, 0);
-        mTabPaddingStart = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tabPaddingStart,
+                .getDimensionPixelOffset(R.styleable.TvTabLayout_tvTabPadding, 0);
+        mTabPaddingStart = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tvTabPaddingStart,
                 mTabPaddingStart);
-        mTabPaddingTop = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tabPaddingTop,
+        mTabPaddingTop = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tvTabPaddingTop,
                 mTabPaddingTop);
-        mTabPaddingEnd = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tabPaddingEnd,
+        mTabPaddingEnd = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tvTabPaddingEnd,
                 mTabPaddingEnd);
-        mTabPaddingBottom = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tabPaddingBottom,
+        mTabPaddingBottom = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tvTabPaddingBottom,
                 mTabPaddingBottom);
 
-        mTabTextSize = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tabTexSize,
-                getResources().getDimensionPixelOffset(R.dimen.tablayout_tab_text_size));
-        mTabTextColors = a.getColorStateList(R.styleable.TvTabLayout_tabTextColor);
+        mTabTextSize = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tvTabTexSize,
+                getResources().getDimensionPixelOffset(R.dimen.tvTabLayout_tab_text_size));
+        mTabTextColors = a.getColorStateList(R.styleable.TvTabLayout_tvTabTextColor);
 
-        mRequestedTabMinWidth = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tabMinWidth,
+        mRequestedTabMinWidth = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tvTabMinWidth,
                 INVALID_WIDTH);
-        mRequestedTabMaxWidth = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tabMaxWidth,
+        mRequestedTabMaxWidth = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tvTabMaxWidth,
                 INVALID_WIDTH);
-        mTabBackgroundResId = a.getResourceId(R.styleable.TvTabLayout_tabBackground, 0);
-        mContentInsetStart = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tabContentStart, 0);
-        mContentInsetBottom = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tabContentBottom, 0);
-        mScrollMode = a.getInt(R.styleable.TvTabLayout_tabScrollMode, MODE_FIXED);
-        mTabGravity = a.getInt(R.styleable.TvTabLayout_tabGravity, GRAVITY_CENTER);
+        mTabBackgroundResId = a.getResourceId(R.styleable.TvTabLayout_tvTabBackground, 0);
+        mContentInsetStart = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tvTabContentStart, 0);
+        mContentInsetBottom = a.getDimensionPixelOffset(R.styleable.TvTabLayout_tvTabContentBottom, 0);
+        mScrollMode = a.getInt(R.styleable.TvTabLayout_tvTabScrollMode, MODE_FIXED);
+        mTabGravity = a.getInt(R.styleable.TvTabLayout_tvTabGravity, GRAVITY_CENTER);
     
-        mTabTextSelectedCentered = a.getBoolean(R.styleable.TvTabLayout_tabTextSelectedCentered, false);
-        mTabTextSelectedScaleValue = a.getFloat(R.styleable.TvTabLayout_tabTextSelectedScale, 0);
+        mTabTextSelectedCentered = a.getBoolean(R.styleable.TvTabLayout_tvTabTextSelectedCentered, false);
+        mTabTextSelectedScaleValue = a.getFloat(R.styleable.TvTabLayout_tvTabTextSelectedScale, 0);
         
         a.recycle();
 
         // TODO add attr for these
         final Resources res = getResources();
-        mTabTextMultiLineSize = res.getDimensionPixelOffset(R.dimen.tablayout_tab_text_size_2line);
-        mScrollableTabMinWidth = res.getDimensionPixelOffset(R.dimen.tablayout_tab_scrollable_min_width);
+        mTabTextMultiLineSize = res.getDimensionPixelOffset(R.dimen.tvTabLayout_tab_text_size_2line);
+        mScrollableTabMinWidth = res.getDimensionPixelOffset(R.dimen.tvTabLayout_tab_scrollable_min_width);
 
         // Now apply the tab mode and gravity
         applyModeAndGravity();
